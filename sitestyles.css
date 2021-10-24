@@ -1,0 +1,96 @@
+/*
+var(--blue)
+var(--yellow)
+var(--black)
+var(--green)
+var(--brown)
+*/
+
+:root {
+  --blue: #006494;
+  --yellow: #ffbf69;
+  --black: #020122;
+  --green: #4a7856;
+  --brown: #5c4742;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--green);
+}
+
+a {
+  color: var(--blue);
+}
+nav a {
+  font-weight: bold;
+}
+
+table {
+  max-width: auto;
+}
+
+ul {
+  padding-bottom: 2%;
+}
+
+details {
+  margin: 2%;
+  padding: 1%;
+}
+details > summary {
+  background-color: var(--blue);
+  color: white;
+  margin: 4% 4% 4% 0;
+  padding: 3%;
+  border: 1px solid var(--blue);
+  border-radius: 10%;
+}
+
+.container {
+  background-color: white;
+  padding-bottom: 2rem;
+}
+
+.guide {
+  padding-top: 1.7%;
+}
+
+.reviews {
+  font-size: 0.8rem;
+}
+
+.banner {
+  text-transform: uppercase;
+  text-align: justify;
+  color: var(--green);
+  background-color: var(--yellow);
+  margin-bottom: -3.25%;
+  padding-left: 2.5%;
+}
+
+.logo {
+  width: 70%;
+  padding-left: 10%;
+}
+
+.sec1 {
+  font-size: 180%;
+  padding-top: 3%;
+}
+
+.sec2 {
+  font-size: 500%;
+}
+
+.first-nav-item {
+  padding-left: 0;
+}

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Park Reviews</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sitestyles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            class="logo"
+            src="images/poop-logo-brown-green-700w.png"
+            alt="Strong Poop by Don Patino from the Noun Project"
+          />
+        </div>
+        <div class="col-sm-8">
+          <div class="banner sec1">Albuquerque Dog Park</div>
+          <div class="banner sec2">Poop Watch</div>
+          <nav class="navbar navbar-expand-sm first-nav-item">
+            <div class="navbar" id="navbarNavDropdown">
+              <ul class="navbar-nav first-nav-item">
+                <li class="nav-item first-nav-item">
+                  <a class="nav-link first-nav-item" href="index.html"
+                    >Park Ratings</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="reviews.html">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- end col div -->
+      </div>
+      <!-- end row div -->
+      <div class="row">
+        <div class="col-sm-5">
+          <h2>Leave a Review</h2>
+          <form>
+            <div class="form-group">
+              <label for="park">*Park:</label><br />
+              <select
+                class="form-control selectpicker form-select"
+                id="park"
+                name="park"
+                required
+              >
+                <option></option>
+                <option value="warren">Bud Warren & Lady</option>
+                <option value="skyline">Canine Skyline</option>
+                <option value="coronado">Coronado</option>
+                <option value="kirtland">Kirtland</option>
+                <option value="altos">Los Altos</option>
+                <option value="montessa">Montessa</option>
+                <option value="baca">North Domingo Baca</option>
+                <option value="ouray">Ouray</option>
+                <option value="triangle">Rio Grande Triangle</option>
+                <option value="roosevelt">Roosevelt</option>
+                <option value="village">Santa Fe Village</option>
+                <option value="bolack">Tom Bolack</option>
+                <option value="tower">Tower Pond</option>
+                <option value="bullhead">USS Bullhead</option>
+                <option value="westgate">Westgate</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">*Date Visited:</label><br />
+              <input
+                class="form-control"
+                type="date"
+                id="date"
+                name="date"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="poops">*Number of Poops:</label><br />
+              <select
+                class="form-control selectpicker form-select"
+                type="text"
+                id="poops"
+                name="poops"
+                required
+              >
+                <option></option>
+                <option>No poops!</option>
+                <option>1-3 poops</option>
+                <option>4-6 poops</option>
+                <option>Poo storm</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="comments">Comments:</label><br />
+
+              <input
+                class="form-control"
+                type="text"
+                id="comments"
+                name="comments"
+                class="big"
+              />
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit" />
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <h2>Previous Reviews</h2>
+
+          <table class="table table-hover reviews">
+            <tr>
+              <th>Park</th>
+              <th>Date</th>
+              <th>Poops</th>
+              <th>Comment</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td width="30%">Bud Warren & Lady</td>
+              <td width="15%">6/22/2020</td>
+              <td width="10%">3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Bud Warren & Lady</td>
+              <td>8/17/2021</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Bud Warren & Lady</td>
+              <td>10/30/2020</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Bud Warren & Lady</td>
+              <td>8/3/2021</td>
+              <td>0</td>
+              <td>Nice location but filthy.</td>
+            </tr>
+            <tr>
+              <td>Bud Warren & Lady</td>
+              <td>1/17/2020</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Bud Warren & Lady</td>
+              <td>10/13/2021</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Bud Warren & Lady</td>
+              <td>11/26/2020</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Bud Warren & Lady</td>
+              <td>3/30/2021</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Canine Skyline</td>
+              <td>4/21/2020</td>
+              <td>2</td>
+              <td>A beautiful place with beautiful dogs.</td>
+            </tr>
+            <tr>
+              <td>Canine Skyline</td>
+              <td>9/8/2021</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Canine Skyline</td>
+              <td>5/12/2020</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Canine Skyline</td>
+              <td>11/6/2020</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Canine Skyline</td>
+              <td>5/13/2020</td>
+              <td>2</td>
+              <td>Great dog park, I give it 3 barks and 1 bite.</td>
+            </tr>
+            <tr>
+              <td>Canine Skyline</td>
+              <td>8/12/2020</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Coronado</td>
+              <td>3/13/2020</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Coronado</td>
+              <td>8/22/2020</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Coronado</td>
+              <td>11/10/2020</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Coronado</td>
+              <td>2/8/2020</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Kirtland</td>
+              <td>12/20/2020</td>
+              <td>0</td>
+              <td>Who let the dogs out?</td>
+            </tr>
+            <tr>
+              <td>Kirtland</td>
+              <td>3/24/2020</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Kirtland</td>
+              <td>2/10/2021</td>
+              <td>2</td>
+              <td>Clean, safe dog park.</td>
+            </tr>
+            <tr>
+              <td>Kirtland</td>
+              <td>12/4/2020</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Kirtland</td>
+              <td>6/17/2021</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Kirtland</td>
+              <td>9/21/2021</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Kirtland</td>
+              <td>10/22/2021</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Los Altos</td>
+              <td>4/21/2021</td>
+              <td>2</td>
+              <td>Had the park all to ourselves.</td>
+            </tr>
+            <tr>
+              <td>Los Altos</td>
+              <td>1/1/2021</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Los Altos</td>
+              <td>4/23/2021</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Los Altos</td>
+              <td>8/28/2021</td>
+              <td>1</td>
+              <td>My dog enjoyed meeting the other dogs.</td>
+            </tr>
+            <tr>
+              <td>Los Altos</td>
+              <td>10/13/2020</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Los Altos</td>
+              <td>9/10/2021</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Los Altos</td>
+              <td>3/25/2020</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Los Altos</td>
+              <td>2/3/2021</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Montessa</td>
+              <td>7/1/2020</td>
+              <td>2</td>
+              <td>Out in the middle of nowhere.</td>
+            </tr>
+            <tr>
+              <td>Montessa</td>
+              <td>7/2/2021</td>
+              <td>0</td>
+              <td>Rarely has other dogs.</td>
+            </tr>
+            <tr>
+              <td>Montessa</td>
+              <td>3/23/2020</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Montessa</td>
+              <td>1/8/2021</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Montessa</td>
+              <td>4/15/2020</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Montessa</td>
+              <td>10/9/2021</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Montessa</td>
+              <td>8/19/2020</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>North Domingo Baca</td>
+              <td>2/20/2021</td>
+              <td>1</td>
+              <td>Great place for the dogs.</td>
+            </tr>
+            <tr>
+              <td>North Domingo Baca</td>
+              <td>5/23/2020</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>North Domingo Baca</td>
+              <td>11/16/2020</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>North Domingo Baca</td>
+              <td>5/30/2020</td>
+              <td>3</td>
+              <td>Great dog park.</td>
+            </tr>
+            <tr>
+              <td>North Domingo Baca</td>
+              <td>6/19/2021</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Ouray</td>
+              <td>4/28/2020</td>
+              <td>2</td>
+              <td>Has water for the dogs.</td>
+            </tr>
+            <tr>
+              <td>Ouray</td>
+              <td>5/8/2021</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Ouray</td>
+              <td>10/9/2020</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Ouray</td>
+              <td>3/5/2021</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Ouray</td>
+              <td>12/20/2020</td>
+              <td>1</td>
+              <td>Dogs love it.</td>
+            </tr>
+            <tr>
+              <td>Ouray</td>
+              <td>12/30/2020</td>
+              <td>2</td>
+              <td>Beautiful views.</td>
+            </tr>
+            <tr>
+              <td>Ouray</td>
+              <td>3/24/2020</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Rio Grande Triangle</td>
+              <td>5/10/2021</td>
+              <td>3</td>
+              <td>Great people, great dogs.</td>
+            </tr>
+            <tr>
+              <td>Rio Grande Triangle</td>
+              <td>8/22/2020</td>
+              <td>0</td>
+              <td>Respectful and kind people and dogs.</td>
+            </tr>
+            <tr>
+              <td>Roosevelt</td>
+              <td>9/20/2021</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Roosevelt</td>
+              <td>7/1/2020</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Roosevelt</td>
+              <td>11/9/2020</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Roosevelt</td>
+              <td>5/15/2020</td>
+              <td>1</td>
+              <td>Fun to take your dogs.</td>
+            </tr>
+            <tr>
+              <td>Roosevelt</td>
+              <td>9/8/2021</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Roosevelt</td>
+              <td>3/26/2020</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Roosevelt</td>
+              <td>8/28/2020</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Santa Fe Village</td>
+              <td>9/4/2020</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Santa Fe Village</td>
+              <td>8/30/2020</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Santa Fe Village</td>
+              <td>9/20/2020</td>
+              <td>0</td>
+              <td>Nice place for your dogs.</td>
+            </tr>
+            <tr>
+              <td>Santa Fe Village</td>
+              <td>12/9/2020</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Santa Fe Village</td>
+              <td>10/4/2021</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Santa Fe Village</td>
+              <td>10/15/2021</td>
+              <td>0</td>
+              <td>Park has plenty of room to run.</td>
+            </tr>
+            <tr>
+              <td>Santa Fe Village</td>
+              <td>6/6/2021</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Santa Fe Village</td>
+              <td>7/3/2020</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Santa Fe Village</td>
+              <td>3/14/2021</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tom Bolack</td>
+              <td>3/12/2021</td>
+              <td>2</td>
+              <td>A good place to go for your dogs.</td>
+            </tr>
+            <tr>
+              <td>Tom Bolack</td>
+              <td>1/27/2021</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tom Bolack</td>
+              <td>11/2/2020</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tom Bolack</td>
+              <td>5/10/2021</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tom Bolack</td>
+              <td>9/19/2020</td>
+              <td>1</td>
+              <td>Lots of happy people with dogs.</td>
+            </tr>
+            <tr>
+              <td>Tom Bolack</td>
+              <td>2/5/2021</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tom Bolack</td>
+              <td>4/2/2020</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tom Bolack</td>
+              <td>5/14/2021</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tower Pond</td>
+              <td>6/7/2021</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tower Pond</td>
+              <td>12/11/2020</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tower Pond</td>
+              <td>4/1/2021</td>
+              <td>2</td>
+              <td>Nice park to take your dog to.</td>
+            </tr>
+            <tr>
+              <td>Tower Pond</td>
+              <td>7/21/2020</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Tower Pond</td>
+              <td>10/21/2021</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>USS Bullhead</td>
+              <td>2/5/2021</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>USS Bullhead</td>
+              <td>11/4/2020</td>
+              <td>1</td>
+              <td>Dog had a great time.</td>
+            </tr>
+            <tr>
+              <td>USS Bullhead</td>
+              <td>11/11/2020</td>
+              <td>2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>USS Bullhead</td>
+              <td>12/15/2020</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>USS Bullhead</td>
+              <td>10/20/2021</td>
+              <td>0</td>
+              <td>Good park.</td>
+            </tr>
+            <tr>
+              <td>USS Bullhead</td>
+              <td>7/20/2021</td>
+              <td>1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>USS Bullhead</td>
+              <td>4/26/2020</td>
+              <td>2</td>
+              <td>
+                Everyone should participate in cleaning and maintaining the
+                park.
+              </td>
+            </tr>
+            <tr>
+              <td>USS Bullhead</td>
+              <td>11/3/2020</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>USS Bullhead</td>
+              <td>2/15/2020</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>USS Bullhead</td>
+              <td>3/25/2020</td>
+              <td>3</td>
+              <td>Cool park.</td>
+            </tr>
+            <tr>
+              <td>Westgate</td>
+              <td>12/19/2020</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Westgate</td>
+              <td>8/27/2020</td>
+              <td>2</td>
+              <td>Clean and the dog loves it.</td>
+            </tr>
+            <tr>
+              <td>Westgate</td>
+              <td>12/8/2020</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Westgate</td>
+              <td>3/6/2020</td>
+              <td>3</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- end container div-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/boostrap.bundle.js"></script>
+  </body>
+</html>
